@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Nexis | Week 1 Assignments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="tag">SKILL NEXIS • WEEK 1</p>
+      <h1>Python Programming Assignments</h1>
+      <p class="subtitle">Temperature Converter • Grade Calculator • Number Checker • Simple ATM Simulator</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card intro">
+      <h2>Week 1 Assignment</h2>
+      <p>This project demonstrates functions, loops, conditional statements and modular programming.</p>
+      <div class="chips"><span>Functions</span><span>Loops</span><span>Conditions</span><span>JavaScript</span></div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>1. Temperature Converter</h2>
+        <p>Convert Celsius to Fahrenheit or Fahrenheit to Celsius.</p>
+        <input id="tempInput" type="number" placeholder="Enter temperature">
+        <select id="tempMode">
+          <option value="cToF">Celsius → Fahrenheit</option>
+          <option value="fToC">Fahrenheit → Celsius</option>
+        </select>
+        <button onclick="convertTemperature()">Convert</button>
+        <p id="tempResult" class="result"></p>
+      </article>
+
+      <article class="card">
+        <h2>2. Student Grade Calculator</h2>
+        <p>Enter marks separated by commas.</p>
+        <input id="marksInput" type="text" placeholder="e.g. 78, 85, 69, 92, 80">
+        <button onclick="calculateGrade()">Calculate Grade</button>
+        <p id="gradeResult" class="result"></p>
+      </article>
+
+      <article class="card">
+        <h2>3. Even/Odd & Prime Checker</h2>
+        <p>Check whether a number is even/odd and prime/not prime.</p>
+        <input id="numberInput" type="number" placeholder="Enter a number">
+        <button onclick="checkNumber()">Check Number</button>
+        <p id="numberResult" class="result"></p>
+      </article>
+
+      <article class="card atm-card">
+        <h2>4. Mini Project: Simple ATM Simulator</h2>
+        <p>PIN login with balance, deposit and withdrawal operations.</p>
+        <input id="pinInput" type="password" maxlength="4" placeholder="Enter 4-digit PIN">
+        <button onclick="loginATM()">Login</button>
+        <p id="atmLoginResult" class="result"></p>
+
+        <div id="atmMenu" class="hidden">
+          <div class="balance">Balance: ₹<span id="balanceValue">5000</span></div>
+          <input id="amountInput" type="number" min="1" placeholder="Enter amount">
+          <div class="button-row">
+            <button onclick="checkBalance()">Check Balance</button>
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+            <button class="secondary" onclick="logoutATM()">Logout</button>
+          </div>
+          <p id="atmResult" class="result"></p>
+        </div>
+      </article>
+    </section>
+
+    <section class="card assignment-details">
+      <h2>Assignment Requirements Covered</h2>
+      <ol>
+        <li>Temperature Converter using conversion functions.</li>
+        <li>Student Grade Calculator using marks, average and grade conditions.</li>
+        <li>Even/Odd and Prime Number Checker.</li>
+        <li>Simple ATM Simulator with PIN login, check balance, deposit and withdraw functions.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>Skill Nexis • Week 1 Submission • Built for learning and practice</footer>
+  <script src="script.js"></script>
+</body>
+</html>
